@@ -54,7 +54,7 @@ class AdvancedLogCaptureFixture(LogCaptureFixture):
 
 
 @pytest.fixture
-def caplog(request):
+def xcaplog(request):
     result = AdvancedLogCaptureFixture(request.node)
     yield result
     result._finalize()
